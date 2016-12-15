@@ -38,7 +38,13 @@
 
 /*css for pictures columns and list*/
 .pictureColumns li img {
+  height: 360px;
+  width: 560px;
+}
+.pictureColumns li {
   list-style-type: none;
-  height: 60px;
-  width: 60px;
+}
+#columns {
+  height: 600px; /*your fixed height*/
+            row-count: 2; /*3 in those rules is just placeholder -- can be anything*/
 }
