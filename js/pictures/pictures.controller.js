@@ -16,9 +16,28 @@
   function PictureListController(PictureResource) {
 
     var vm = this;
-
+    vm.changeCategory = changeCategory;
+    vm.changeCategoryLandscape = changeCategoryLandscape;
+    vm.filterParameter = '';
     vm.pictures = [];
     vm.deletePicture = deletePicture;
+
+    function changeCategory() {
+      if (vm.filterParameter != 'animal'){
+        vm.filterParameter = 'animal'
+      } else {
+        vm.filterParameter = ''
+      }
+      console.log(vm.filterParameter)
+    }
+    function changeCategoryLandscape() {
+      if (vm.filterParameter != 'landscape'){
+        vm.filterParameter = 'landscape'
+      } else {
+        vm.filterParameter = ''
+      }
+      console.log(vm.filterParameter)
+    }
 
     PictureResource.query().$promise.then(function(data) {
       console.log('PictureResource.query()')
@@ -62,7 +81,7 @@
 
   function PictureEditController(PictureResource, $state, $stateParams) {
     var vm = this;
-    
+
     vm.picture = {};
     vm.updatePicture = updatePicture;
 
