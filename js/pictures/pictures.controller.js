@@ -18,7 +18,7 @@
     var vm = this;
     vm.changeCategory = changeCategory;
     vm.changeCategoryLandscape = changeCategoryLandscape;
-    vm.filterParameter = '';
+    vm.filterParameter = 'sa;ldksdjfalsdjf';
     vm.pictures = [];
     vm.deletePicture = deletePicture;
 
@@ -26,7 +26,7 @@
       if (vm.filterParameter != 'animal'){
         vm.filterParameter = 'animal'
       } else {
-        vm.filterParameter = ''
+        vm.filterParameter = 'asdfja'
       }
       console.log(vm.filterParameter)
     }
@@ -34,7 +34,7 @@
       if (vm.filterParameter != 'landscape'){
         vm.filterParameter = 'landscape'
       } else {
-        vm.filterParameter = ''
+        vm.filterParameter = 'asdfa'
       }
       console.log(vm.filterParameter)
     }

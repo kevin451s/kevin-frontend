@@ -38,7 +38,22 @@
 
 /*css for pictures columns and list*/
 .pictureColumns li img {
+  height: 360px;
+  width: 560px;
+}
+.pictureColumns li {
   list-style-type: none;
-  height: 60px;
-  width: 60px;
+}
+#columns {
+  /*height: 600px; /*your fixed height*/*/
+  -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
+    float: left;
+}
+#columns li {
+  display: inline-block;
 }
