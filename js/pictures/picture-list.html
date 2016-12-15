@@ -5,7 +5,7 @@
   Landscape
 </button>
 <div class="pictureColumns">
-  <ul class="pictureColumns" id="columns">
+  <ul id="columns">
     <li ng-repeat="pictures in pictureListVm.pictures | filter:{categories: pictureListVm.filterParameter}">
       <img ng-src={{pictures.url}}>
       <!-- <a ui-sref="picturesShow({id: pictures._id})">More Info</a> -->

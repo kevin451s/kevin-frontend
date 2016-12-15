@@ -45,6 +45,15 @@
   list-style-type: none;
 }
 #columns {
-  height: 600px; /*your fixed height*/
-            row-count: 2; /*3 in those rules is just placeholder -- can be anything*/
+  /*height: 600px; /*your fixed height*/*/
+  -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
+    float: left;
+}
+#columns li {
+  display: inline-block;
 }
