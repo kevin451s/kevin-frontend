@@ -6,6 +6,6 @@
   ServiceResource.$inject = ['$resource'];
 
   function ServiceResource($resource) {
-    return $resource('http://localhost:3000/services/:id', {id: '@_id'}, { 'update': { method: 'PATCH'}})
+    return $resource('https://backend-project.herokuapp.com/services/:id', {id: '@_id'}, { 'update': { method: 'PATCH'}})
   }
 }());
