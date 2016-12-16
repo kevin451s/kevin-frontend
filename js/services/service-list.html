@@ -1,9 +1,8 @@
 
   <div ng-controller="ServiceListController as serviceListVm">
-    <ul>
+    <ul class="serviceList">
       <li ng-repeat="services in serviceListVm.services">
-        {{services.title}} -
-        {{services.description}}
+        {{services.title}} - {{services.description}}
       </li>
     </ul>
     <!-- {{services.title}} -->
