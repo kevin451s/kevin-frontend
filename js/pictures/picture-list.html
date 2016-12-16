@@ -1,9 +1,9 @@
-<button ng-click="pictureListVm.changeCategory()">
+<div ng-click="pictureListVm.changeCategory()" class="pictureThumbnail" id="animalThumbnail">
   Animal
-</button>
-<button ng-click="pictureListVm.changeCategoryLandscape()">
+</div>
+<div ng-click="pictureListVm.changeCategoryLandscape()" class="pictureThumbnail" id="landscapeThumbnail">
   Landscape
-</button>
+</div>
 <div class="pictureColumns">
   <ul id="columns">
     <li ng-repeat="pictures in pictureListVm.pictures | filter:{categories: pictureListVm.filterParameter}">

@@ -45,8 +45,35 @@
   list-style-type: none;
 }
 #columns {
+  margin-left: 40px;
   column-count: 2;
+  /*column-gap: -60px;*/
+  clear: both;
+  float: left;
 }
 #columns li {
   display: inline-block;
+}
+/*css for picture thubmnails*/
+.pictureThumbnail {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+  border: 1px solid black;
+  height: 500px;
+  width: 500px;
+  float: left;
+}
+#animalThumbnail {
+  background-image: url('http://www.cityofsalinas.org/sites/default/files/styles/brg_slideshow_full/public/departments_files/animal_services_files/puppy1.jpg?itok=n806oiOw');
+  /*background-size: cover;*/
+  background-position: center;
+}
+
+#landscapeThumbnail {
+  background-image: url('http://eskipaper.com/images/landscape-3.jpg');
+  background-position: fill;
 }
