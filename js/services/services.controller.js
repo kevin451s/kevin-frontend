@@ -20,9 +20,9 @@
     vm.services = [];
     vm.deleteService = deleteService;
 
-    ServiceResource.query().$promise.then(function(data) {
+    ServiceResource.get().$promise.then(function(data) {
       console.log('ServiceResource.query()')
-      vm.services = data;
+      vm.services = data.services;
       console.log(vm.services)
     });
 

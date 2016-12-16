@@ -1,3 +1,4 @@
+
 <div ng-click="pictureListVm.changeCategory()" class="pictureThumbnail" id="animalThumbnail">
   Animal
 </div>
@@ -8,9 +9,7 @@
   <ul id="columns">
     <li ng-repeat="pictures in pictureListVm.pictures | filter:{categories: pictureListVm.filterParameter}">
       <img ng-src={{pictures.url}}>
-      <!-- <a ui-sref="picturesShow({id: pictures._id})">More Info</a> -->
-      <!-- <a ui-sref="picturesEdit({id: pictures._id})">Edit</a> -->
-      <!-- <a href="" ng-click="picturesListVm.deletePictures(pictures)">Delete Me</a> -->
+
     </li>
   </ul>
 </div>

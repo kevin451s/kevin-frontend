@@ -1,6 +1,10 @@
-<ul>
-  <li ng-repeat="services in serviceListVm.services">
-    {{services.title}}
-    
-  </li>
-</ul>
+
+  <div ng-controller="ServiceListController as serviceListVm">
+    <ul>
+      <li ng-repeat="services in serviceListVm.services">
+        {{services.title}} -
+        {{services.description}}
+      </li>
+    </ul>
+    <!-- {{services.title}} -->
+  </div>

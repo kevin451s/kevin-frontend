@@ -50,8 +50,8 @@
         controllerAs: 'pictureListVm'
       })
       .state('servicesList', {
-        url: '/services',
-        templateUrl: 'js/templates/services.html',
+        url: '/services/list',
+        templateUrl: 'js/services/service-list.html',
         controller: 'ServiceListController',
         controllerAs: 'serviceListVm'
       })
